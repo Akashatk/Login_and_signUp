@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="screen">
+        <div class="container">
+            <h6><span>Register</span><span>Log In</span></h6>
+        </div>
+        <div class="toggle">
+            <a href="Display.html" id="redir">
+                <button class="checkbox" id="reg-log">
+                    <label for="reg-log"></label>
+                </button>
+                <p id="message">Click to Log In</p>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-front">
+                    <div class="card-wrap">
+                        <h4>Sign Up</h4>
+                        <div class="form-group">
+                            <i class="input-icon uil uil-user"></i>
+                            <input type="text" class="form-style" placeholder="Full Name" id="input1">
+                        </div>	
+                        <div class="form-group mt-2">
+                            <i class="input-icon uil uil-phone"></i>
+                            <input type="tel" class="form-style" placeholder="Phone Number" id="input2">
+                        </div>	
+                        <div class="form-group mt-2">
+                            <i class="input-icon uil uil-at"></i>
+                            <input type="email" class="form-style" placeholder="Email" id="input3">
+                        </div>
+                        <div class="form-group mt-2">
+                            <i class="input-icon uil uil-calendar-alt"></i>
+                            <input type="date" class="form-style" placeholder="Date of Birth" id="input4">
+                        </div>
+                        <div class="form-group mt-2">
+                            <i class="input-icon uil uil-user-square"></i>
+                            <input type="file"  accept="image/*" onchange="getFile(event)" id="image" class="form-style"  onchange="loadFile(event)">
+                        </div>
+                        <button id="btn" class="btn mt-4" onclick="adddata()">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
